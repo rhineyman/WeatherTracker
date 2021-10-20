@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="search">
+            <div class="row">
+                <h1>Search for a City:</h1>
+            </div>
+            <div class="row">
+                <input type="text" id="searchInput" placeholder="City">
+                <button type="button" id="searchBtn" class="btn btn-primary">Search</button>
+            </div>
+            <!-- list of previous searches -->
+            <div id="historyItems"></div>
+        </div>
+        <div class="col-two-container">
+            <div class="forecast">
+                <div class="row">
+                    <p id="cityName">City Name</p>
+                    <h1 class="currentDate"></h1>
+                    <img class="weatherIcon"></img>
+                </div>
+                <div class="row">
+                    <p id="temp">Temperature:</p>
+                </div>
+                <div class="row">
+                    <p id="humidity">Humidity:</p>
+                </div>
+                <div class="row">
+                    <p id="windSpeed">Wind Speed:</p>
+                </div>
+                <div class="row">
+                    <p id="uvIndex">UV Index:</p>
+                </div>
+            </div>
+
+            <div id="fiveDayContainer">
+                <h1>5-Day Forecast:</h1>
+                <div class="cardRow" id="cardRow">
+                    <div class="fiveDayCard" id="fiveDayCard0">
+                        <div id="date3">Date: </div>
+                        <div id="img3"></div>
+                        <div id="temp3">Temp: </div>
+                        <div id="hum3">Humidity: </div>                        
+                    </div>
+                    <div class="fiveDayCard" id="fiveDayCard1">
+                        <div id="date11">Date: </div>
+                        <div id="img11"></div>
+                        <div id="temp11">Temp: </div>
+                        <div id="hum11">Humidity: </div>
+                    </div>
+                    <div class="fiveDayCard" id="fiveDayCard2">
+                        <div id="date19">Date: </div>
+                        <div id="img19"></div>
+                        <div id="temp19">Temp: </div>
+                        <div id="hum19">Humidity: </div>
+                    </div>
+                    <div class="fiveDayCard" id="fiveDayCard3">
+                        <div id="date27">Date: </div>
+                        <div id="img27"></div>
+                        <div id="temp27">Temp: </div>
+                        <div id="hum27">Humidity: </div>
+                    </div>
+                    <div class="fiveDayCard" id="fiveDayCard4">
+                        <div id="date35">Date: </div>
+                        <div id="img35"></div>
+                        <div id="temp35">Temp: </div>
+                        <div id="hum35">Humidity: </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./assets/script/script.js"></script>
+
+</html>

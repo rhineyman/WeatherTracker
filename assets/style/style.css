@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    font-size: xx-large;
+    background-color: #2f3640;
+}
+
+h1, h3, p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+html {
+    height: 100%;
+}
+
+input {
+    border: 1px solid #cecfd2;
+    border-radius: 5px;
+}
+
+#cityName {
+    font-size: 38px;
+    font-weight: bold;
+}
+.container {
+    /* display: flex; */
+    flex-direction: row;
+    max-width: 640px;
+    height: 100%;
+}
+
+.search {
+    padding: 25px;
+    background-color: #f5f6fa;
+}
+
+.search h1 {
+    line-height: 30px;
+}
+
+.forecast {
+    margin-top: 25px;
+    border: solid 1px #cecfd2;
+    margin-left: 5%;
+    min-width: 500px;
+    padding: 12px 15px 15px 15px;
+    height: auto;
+}
+
+
+ .fiveDayContainer h1 {
+    margin-top: 25px;
+    margin-left: 5%;
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.fiveDayCard {
+    margin-left: 58.5px;
+    width: 175px;
+    height: auto;
+    border-radius: 5px;
+    color: white;
+    font-size: larger;
+    background-color: #3498db;
+}
+
+.fiveDayContainer .card-text {
+    margin-bottom: 15px;
+    padding: 10px 30px 5px 10px;
+}
+
+.fiveDayCard h3 {
+    margin: 5px;
+}
+
+.fiveDayCard img {
+    margin-left: 10%;
+}
+
+.historyItems {
+    margin-top: 20px;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+input {
+    height: 40px;
+    width: auto;
+}
+
+
+.row {
+    display: flex;
+    line-height: 50%;
+    margin: 5px 5px 5px 0px;
+}
+
+.row * {
+    margin-right: 5px;
+}
